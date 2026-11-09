@@ -1,2 +1,1 @@
-# ORIGIN insurance site
-GitHub Pages deploy of the remake static export.
+ORIGIN one-page static site for GitHub Pages.
