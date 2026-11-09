@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="Life insurance illustration of a family under a protective shield">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EFB23D"/><stop offset="1" stop-color="#f6cd78"/></linearGradient></defs>
+  <rect width="400" height="240" fill="url(#g)"/>
+  <circle cx="70" cy="40" r="80" fill="#005AB0" opacity="0.9"/>
+  <circle cx="360" cy="230" r="80" fill="#ffffff" opacity="0.25"/>
+  <path d="M200 30l80 30v52c0 50-34 86-80 104-46-18-80-54-80-104V60z" fill="#005AB0"/>
+  <g fill="#ffffff">
+    <circle cx="176" cy="104" r="16"/><path d="M150 168c0-22 12-38 26-38s26 16 26 38z"/>
+    <circle cx="224" cy="98" r="18"/><path d="M196 168c0-26 13-44 28-44s28 18 28 44z"/>
+    <circle cx="200" cy="140" r="11" fill="#EFB23D"/><path d="M184 182c0-16 7-26 16-26s16 10 16 26z" fill="#EFB23D"/>
+  </g>
+</svg>

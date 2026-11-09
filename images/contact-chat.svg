@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-label="Illustration of an envelope and chat bubbles">
+  <rect width="480" height="320" rx="28" fill="#EFB23D"/>
+  <circle cx="400" cy="60" r="90" fill="#ffffff" opacity="0.3"/>
+  <circle cx="60" cy="290" r="80" fill="#005AB0" opacity="0.15"/>
+  <rect x="70" y="110" width="220" height="150" rx="14" fill="#005AB0"/>
+  <path d="M70 124 l110 76 110 -76" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M290 60 h120 a16 16 0 0 1 16 16 v50 a16 16 0 0 1 -16 16 h-70 l-24 22 v-22 h-26 a16 16 0 0 1 -16 -16 v-50 a16 16 0 0 1 16 -16z" fill="#ffffff"/>
+  <circle cx="320" cy="101" r="8" fill="#005AB0"/><circle cx="350" cy="101" r="8" fill="#005AB0"/><circle cx="380" cy="101" r="8" fill="#005AB0"/>
+  <path d="M330 200 h90 a14 14 0 0 1 14 14 v36 a14 14 0 0 1 -14 14 h-10 v18 l-20 -18 h-60 a14 14 0 0 1 -14 -14 v-36 a14 14 0 0 1 14 -14z" fill="#00468a"/>
+  <path d="M350 226 h60 M350 242 h36" stroke="#EFB23D" stroke-width="6" stroke-linecap="round"/>
+</svg>

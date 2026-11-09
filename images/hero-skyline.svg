@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" role="img" aria-label="Abstract harbour skyline illustration in ORIGIN blue and gold">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a74c9"/>
+      <stop offset="0.6" stop-color="#005AB0"/>
+      <stop offset="1" stop-color="#00468a"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EFB23D" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#EFB23D" stop-opacity="0.35"/>
+    </linearGradient>
+    <clipPath id="frame"><rect x="0" y="0" width="640" height="520" rx="40"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="640" height="520" fill="url(#sky)"/>
+    <circle cx="470" cy="150" r="78" fill="#EFB23D"/>
+    <circle cx="470" cy="150" r="110" fill="#EFB23D" opacity="0.18"/>
+    <path d="M0 250 C120 200 220 260 330 220 S540 190 640 230 V520 H0Z" fill="#ffffff" opacity="0.08"/>
+    <g fill="#ffffff" opacity="0.22">
+      <rect x="30" y="250" width="44" height="130"/><rect x="84" y="210" width="34" height="170"/>
+      <rect x="540" y="230" width="40" height="150"/><rect x="590" y="270" width="50" height="110"/>
+    </g>
+    <g fill="#ffffff">
+      <rect x="130" y="190" width="50" height="190" rx="4"/>
+      <rect x="190" y="240" width="40" height="140" rx="4"/>
+      <path d="M245 380 V150 L275 110 L305 150 V380Z"/>
+      <rect x="318" y="170" width="46" height="210" rx="4"/>
+      <rect x="374" y="220" width="54" height="160" rx="4"/>
+      <path d="M440 380 V200 h30 l20 -30 v210Z"/>
+    </g>
+    <g fill="#005AB0" opacity="0.55">
+      <rect x="140" y="205" width="10" height="10"/><rect x="160" y="205" width="10" height="10"/>
+      <rect x="140" y="230" width="10" height="10"/><rect x="160" y="255" width="10" height="10"/>
+      <rect x="258" y="170" width="8" height="12"/><rect x="284" y="170" width="8" height="12"/>
+      <rect x="258" y="200" width="8" height="12"/><rect x="284" y="230" width="8" height="12"/>
+      <rect x="328" y="190" width="10" height="10"/><rect x="346" y="215" width="10" height="10"/>
+      <rect x="386" y="240" width="10" height="10"/><rect x="406" y="265" width="10" height="10"/>
+    </g>
+    <rect x="0" y="378" width="640" height="142" fill="url(#sea)"/>
+    <g fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.7">
+      <path d="M40 420 q30 -14 60 0 t60 0"/>
+      <path d="M260 450 q30 -14 60 0 t60 0 t60 0"/>
+      <path d="M470 415 q30 -14 60 0 t60 0"/>
+    </g>
+    <path d="M150 470 h120 l-20 22 h-80z" fill="#00468a"/>
+    <path d="M205 470 V420 l40 44z" fill="#ffffff"/>
+  </g>
+</svg>
