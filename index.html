@@ -19,16 +19,16 @@
 <body>
   <header class="header" id="top">
     <div class="container header__inner">
-      <a href="index.html" class="brand" aria-label="ORIGIN home">
+      <a href="#top" class="brand" aria-label="ORIGIN home">
         <span class="brand__mark">
-          <img src="brand/origin-logo.png" alt="ORIGIN" class="brand__logo" width="200" height="60">
+          <img src="brand/origin-logo.png" alt="ORIGIN" class="brand__logo" width="280" height="88">
         </span>
       </a>
       <nav class="nav" id="nav" aria-label="Primary">
-        <a href="about.html">About</a>
-        <a href="solutions.html">Solutions</a>
-        <a href="partners.html">Partners</a>
-        <a href="enquiry.html" class="btn btn--gold btn--sm">Enquiry</a>
+        <a href="#about">About</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#partners">Partners</a>
+        <a href="#enquiry" class="btn btn--gold btn--sm">Enquiry</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
         <span class="material-symbols-rounded">menu</span>
@@ -36,7 +36,6 @@
     </div>
   </header>
   <main>
-    <!-- 2. Hero -->
     <section class="hero">
       <div class="hero__bg" aria-hidden="true">
         <div class="hero__slide is-active" style="background-image:url('https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=1800&q=70')"></div>
@@ -50,16 +49,14 @@
           <h1 class="hero__title">Smart insurance protection,<br><span class="accent-text">from Hong Kong to the world.</span></h1>
           <p class="hero__lead">ORIGIN helps individuals, families and businesses understand their options and connect with trusted global insurer partners — clearly, transparently and personally.</p>
           <div class="hero__cta">
-            <a href="enquiry.html" class="btn btn--gold ripple">Make an enquiry <span class="material-symbols-rounded">arrow_forward</span></a>
-            <a href="solutions.html" class="btn btn--ghost ripple">Explore solutions</a>
+            <a href="#enquiry" class="btn btn--gold ripple">Make an enquiry <span class="material-symbols-rounded">arrow_forward</span></a>
+            <a href="#solutions" class="btn btn--ghost ripple">Explore solutions</a>
           </div>
         </div>
       </div>
       <a href="#highlights" class="hero__scroll" aria-label="Scroll down"><span class="material-symbols-rounded">expand_more</span></a>
     </section>
 
-
-    <!-- 3. Trust / highlights strip -->
     <section class="highlights" id="highlights" aria-label="Highlights">
       <div class="container highlights__grid">
         <div class="hl reveal"><span class="hl__icon material-symbols-rounded">public</span><div><strong>Global partners</strong><span>Access to international insurers</span></div></div>
@@ -69,40 +66,167 @@
       </div>
     </section>
 
+    <section class="mission section" id="about">
+      <div class="container mission__grid">
+        <div class="mission__media reveal">
+          <div class="mission__img mission__img--a" style="background-image:url('https://images.unsplash.com/photo-1499002238440-d264edd596ec?auto=format&fit=crop&w=900&q=70')" role="img" aria-label="Lavender fields in Provence, France"></div>
+          <div class="mission__img mission__img--b" style="background-image:url('https://images.unsplash.com/photo-1506970845246-18f21d533b20?auto=format&fit=crop&w=900&q=70')" role="img" aria-label="Hong Kong cityscape"></div>
+          <div class="mission__badge"><span class="material-symbols-rounded">handshake</span>Bridging East &amp; West</div>
+        </div>
+        <div class="mission__copy">
+          <p class="kicker reveal">Our mission</p>
+          <h2 class="reveal">Insurance that is <span class="u-gold">smart</span>, <span class="u-blue">transparent</span> and built on trust.</h2>
+          <p class="reveal">At ORIGIN we believe protection should be easy to understand and grounded in long-term relationships.</p>
+          <p class="reveal">We bridge clients in Hong Kong with international insurer partners, helping you compare options, ask the right questions and choose cover with confidence — whether your life and business sit in Hong Kong, France, or somewhere in between.</p>
+          <ul class="checks reveal">
+            <li><span class="material-symbols-rounded">check_circle</span>Needs-first conversations, not product pushing</li>
+            <li><span class="material-symbols-rounded">check_circle</span>Clear explanations of terms, exclusions and costs</li>
+            <li><span class="material-symbols-rounded">check_circle</span>Ongoing support as your circumstances change</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <section class="section home-teasers" aria-label="Explore ORIGIN">
+    <section class="solutions section" id="solutions">
       <div class="container">
         <div class="section-head">
-          <p class="kicker reveal">Explore</p>
-          <h2 class="reveal">Find what you need</h2>
-          <p class="section-head__lead reveal">Learn about our mission, solutions, partner network, or send an enquiry.</p>
+          <p class="kicker reveal">What we do</p>
+          <h2 class="reveal">Solutions shaped around you</h2>
+          <p class="section-head__lead reveal">From personal protection to business risk, we help you navigate the options available through our partner network.</p>
         </div>
-        <div class="cards cards--home">
-          <article class="card reveal">
-            <div class="card__icon"><span class="material-symbols-rounded">handshake</span></div>
-            <h3>About ORIGIN</h3>
-            <p>Smart, transparent protection bridging Hong Kong and international partners.</p>
-            <a href="about.html" class="card__link">Read more <span class="material-symbols-rounded">east</span></a>
+        <div class="cards">
+          <article class="card card--blue reveal ripple" tabindex="0">
+            <div class="card__icon"><span class="material-symbols-rounded">family_restroom</span></div>
+            <h3>Personal Protection</h3>
+            <p>Life, health and critical illness cover for you and your family, explained clearly so you know exactly what you are protected against.</p>
+            <a href="#enquiry" data-topic="Personal Protection" class="card__link">Ask about this <span class="material-symbols-rounded">east</span></a>
           </article>
-          <article class="card card--gold reveal">
-            <div class="card__icon"><span class="material-symbols-rounded">tune</span></div>
-            <h3>Solutions</h3>
-            <p>Personal, business, cross-border advice and claims support shaped around you.</p>
-            <a href="solutions.html" class="card__link">View solutions <span class="material-symbols-rounded">east</span></a>
+          <article class="card card--gold reveal ripple" tabindex="0">
+            <div class="card__icon"><span class="material-symbols-rounded">business_center</span></div>
+            <h3>Business Cover</h3>
+            <p>Property, liability and employee benefit options for SMEs and growing companies, matched to the way your business actually operates.</p>
+            <a href="#enquiry" data-topic="Business Cover" class="card__link">Ask about this <span class="material-symbols-rounded">east</span></a>
           </article>
-          <article class="card card--teal reveal">
-            <div class="card__icon"><span class="material-symbols-rounded">public</span></div>
-            <h3>Partners</h3>
-            <p>Global Insurancer and leading international insurers in our network.</p>
-            <a href="partners.html" class="card__link">See partners <span class="material-symbols-rounded">east</span></a>
+          <article class="card card--teal reveal ripple" tabindex="0">
+            <div class="card__icon"><span class="material-symbols-rounded">flight_takeoff</span></div>
+            <h3>Cross-border Advice</h3>
+            <p>Living, working or investing between Hong Kong and France? We help you think through cover that travels with you across jurisdictions.</p>
+            <a href="#enquiry" data-topic="Cross-border Advice" class="card__link">Ask about this <span class="material-symbols-rounded">east</span></a>
           </article>
-          <article class="card card--coral reveal">
-            <div class="card__icon"><span class="material-symbols-rounded">mail</span></div>
-            <h3>Enquiry</h3>
-            <p>Tell us what you need — the ORIGIN team will follow up with you.</p>
-            <a href="enquiry.html" class="card__link">Make an enquiry <span class="material-symbols-rounded">east</span></a>
+          <article class="card card--coral reveal ripple" tabindex="0">
+            <div class="card__icon"><span class="material-symbols-rounded">support_agent</span></div>
+            <h3>Claims Support</h3>
+            <p>When it matters most, we help you understand the claims process, prepare documents and liaise with your insurer.</p>
+            <a href="#enquiry" data-topic="Claims Support" class="card__link">Ask about this <span class="material-symbols-rounded">east</span></a>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="band" aria-label="Hong Kong and France">
+      <div class="band__item" style="background-image:url('https://images.unsplash.com/photo-1536599018102-9f803c140fc1?auto=format&fit=crop&w=1200&q=70')"><span>Hong Kong</span></div>
+      <div class="band__item" style="background-image:url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1200&q=70')"><span>France</span></div>
+    </section>
+
+    <section class="partners section" id="partners">
+      <div class="container">
+        <div class="section-head section-head--partners">
+          <p class="pill pill--gold reveal">Global partners</p>
+          <h2 class="reveal">Trusted global insurers</h2>
+          <p class="section-head__lead reveal">We collaborate with leading international insurers — and our featured partner Global Insurancer — to bring broader options to clients in Hong Kong and beyond.</p>
+        </div>
+        <div class="partner-feature reveal">
+          <div class="partner-feature__mark"><span class="material-symbols-rounded">language</span></div>
+          <div>
+            <p class="partner-feature__label">Featured partner</p>
+            <h3>Global Insurancer</h3>
+            <p>A key international partner in our network, supporting ORIGIN clients with access to global insurance solutions.</p>
+          </div>
+        </div>
+        <div class="partner-logos" aria-label="Global insurer partners">
+          <div class="partner-logo reveal" title="AIA">
+            <img class="partner-logo__img" src="partners/aia.svg" alt="AIA" width="160" height="48" loading="lazy" decoding="async">
+          </div>
+          <div class="partner-logo reveal" title="AXA">
+            <img class="partner-logo__img partner-logo__img--axa" src="partners/axa.svg" alt="AXA" width="80" height="80" loading="lazy" decoding="async">
+          </div>
+          <div class="partner-logo reveal" title="Allianz">
+            <img class="partner-logo__img" src="partners/allianz.svg" alt="Allianz" width="160" height="48" loading="lazy" decoding="async">
+          </div>
+          <div class="partner-logo reveal" title="Manulife">
+            <img class="partner-logo__img" src="partners/manulife.svg" alt="Manulife" width="160" height="48" loading="lazy" decoding="async">
+          </div>
+          <div class="partner-logo reveal" title="Prudential">
+            <img class="partner-logo__img" src="partners/pru.svg" alt="Pru" width="160" height="48" loading="lazy" decoding="async">
+            <span class="partner-logo__caption">part of M&amp;G plc</span>
+          </div>
+          <div class="partner-logo reveal" title="Generali">
+            <img class="partner-logo__img" src="partners/generali.svg" alt="Generali" width="160" height="48" loading="lazy" decoding="async">
+          </div>
+          <div class="partner-logo reveal" title="Zurich">
+            <img class="partner-logo__img partner-logo__img--zurich" src="partners/zurich.svg" alt="Zurich" width="160" height="48" loading="lazy" decoding="async">
+          </div>
+          <div class="partner-logo reveal" title="Chubb">
+            <img class="partner-logo__img" src="partners/chubb.svg" alt="Chubb" width="160" height="48" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <p class="partners__disclaimer reveal">Logos shown for identification of insurers in ORIGIN&apos;s partner network and do not imply endorsement.</p>
+      </div>
+    </section>
+
+    <section class="enquiry section" id="enquiry">
+      <div class="container enquiry__grid">
+        <div class="enquiry__intro">
+          <p class="kicker kicker--light reveal">Enquiry</p>
+          <h2 class="reveal">Let's talk about your protection</h2>
+          <p class="reveal">Tell us a little about what you are looking for and the ORIGIN team will follow up with you.</p>
+          <ul class="enquiry__points reveal">
+            <li><span class="material-symbols-rounded">lock</span>Your details are only used to respond to your enquiry</li>
+            <li><span class="material-symbols-rounded">chat</span>English or Chinese — whichever you prefer</li>
+          </ul>
+        </div>
+        <form class="form reveal" id="enquiryForm" novalidate>
+          <div class="field">
+            <input id="f-name" name="name" type="text" placeholder=" " required autocomplete="name">
+            <label for="f-name">Full name *</label>
+            <small class="field__err"></small>
+          </div>
+          <div class="field">
+            <input id="f-email" name="email" type="email" placeholder=" " required autocomplete="email">
+            <label for="f-email">Email *</label>
+            <small class="field__err"></small>
+          </div>
+          <div class="field">
+            <input id="f-phone" name="phone" type="tel" placeholder=" " autocomplete="tel">
+            <label for="f-phone">Phone (optional)</label>
+            <small class="field__err"></small>
+          </div>
+          <div class="field field--select">
+            <select id="f-topic" name="topic" required>
+              <option value="" selected disabled></option>
+              <option>Personal Protection</option>
+              <option>Business Cover</option>
+              <option>Cross-border Advice</option>
+              <option>Claims Support</option>
+              <option>Partnership</option>
+              <option>Other</option>
+            </select>
+            <label for="f-topic">Topic *</label>
+            <small class="field__err"></small>
+          </div>
+          <div class="field field--full">
+            <textarea id="f-msg" name="message" rows="4" placeholder=" " required></textarea>
+            <label for="f-msg">Message *</label>
+            <small class="field__err"></small>
+          </div>
+          <label class="consent field--full">
+            <input type="checkbox" id="f-consent" required>
+            <span>I agree that ORIGIN may contact me about this enquiry.</span>
+          </label>
+          <small class="field__err field--full" id="consentErr"></small>
+          <button type="submit" class="btn btn--blue btn--block ripple field--full">Send enquiry <span class="material-symbols-rounded">send</span></button>
+          <p class="form__note field--full">This preview form validates in your browser only; it is not yet connected to a submission service.</p>
+        </form>
       </div>
     </section>
   </main>
@@ -110,11 +234,11 @@
     <div class="container footer__inner">
       <div class="brand brand--footer">
         <span class="brand__mark">
-          <img src="brand/origin-logo.png" alt="ORIGIN 厚源澤承" class="brand__logo" width="200" height="60">
+          <img src="brand/origin-logo.png" alt="ORIGIN 厚源澤承" class="brand__logo" width="280" height="88">
         </span>
       </div>
       <nav class="footer__nav" aria-label="Footer">
-        <a href="about.html">About</a><a href="solutions.html">Solutions</a><a href="partners.html">Partners</a><a href="enquiry.html">Enquiry</a>
+        <a href="#about">About</a><a href="#solutions">Solutions</a><a href="#partners">Partners</a><a href="#enquiry">Enquiry</a>
       </nav>
       <p class="footer__copy">© 2026 ORIGIN 厚源澤承. All rights reserved.</p>
       <p class="footer__credit">Imagery via Unsplash.</p>

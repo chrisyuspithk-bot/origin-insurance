@@ -1,4 +1,3 @@
-
 (function () {
   "use strict";
 
@@ -6,12 +5,10 @@
   var nav = document.getElementById("nav");
   var toggle = document.getElementById("navToggle");
 
-  // Sticky header state
   function onScroll() { header.classList.toggle("is-scrolled", window.scrollY > 40); }
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  // Mobile menu
   function setMenu(open) {
     nav.classList.toggle("is-open", open);
     header.classList.toggle("menu-open", open);
@@ -21,7 +18,6 @@
   toggle.addEventListener("click", function () { setMenu(!nav.classList.contains("is-open")); });
   nav.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
 
-  // Active nav link
   var links = Array.prototype.slice.call(nav.querySelectorAll("a:not(.btn)"));
   if ("IntersectionObserver" in window) {
     var secObs = new IntersectionObserver(function (entries) {
@@ -30,11 +26,10 @@
         links.forEach(function (l) { l.classList.toggle("is-active", l.getAttribute("href") === "#" + en.target.id); });
       });
     }, { rootMargin: "-45% 0px -50% 0px" });
-    ["about", "solutions", "partners"].forEach(function (id) {
+    ["about", "solutions", "partners", "enquiry"].forEach(function (id) {
       var el = document.getElementById(id); if (el) secObs.observe(el);
     });
 
-    // Reveal on scroll (staggered within siblings)
     var revObs = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (!en.isIntersecting) return;
@@ -51,7 +46,6 @@
     document.documentElement.classList.add("no-js");
   }
 
-  // Hero slideshow (HK / Paris / HK)
   var slides = document.querySelectorAll(".hero__slide");
   var cur = 0;
   if (slides.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -62,7 +56,6 @@
     }, 6000);
   }
 
-  // Material ripple
   document.addEventListener("pointerdown", function (e) {
     var el = e.target.closest(".ripple");
     if (!el) return;
@@ -77,15 +70,31 @@
     setTimeout(function () { w.remove(); }, 650);
   });
 
-  // Card "Ask about this" pre-selects topic
   var topic = document.getElementById("f-topic");
+  var form = document.getElementById("enquiryForm");
+  if (!topic || !form) return;
+
   function syncSelect() { topic.classList.toggle("has-value", !!topic.value); }
   topic.addEventListener("change", syncSelect);
   document.querySelectorAll("[data-topic]").forEach(function (a) {
-    a.addEventListener("click", function () { topic.value = a.getAttribute("data-topic"); syncSelect(); });
+    a.addEventListener("click", function () {
+      topic.value = a.getAttribute("data-topic");
+      syncSelect();
+    });
   });
 
-  // Toast
+  var params = new URLSearchParams(window.location.search);
+  var topicParam = params.get("topic");
+  if (topicParam) {
+    for (var i = 0; i < topic.options.length; i++) {
+      if (topic.options[i].text === topicParam) {
+        topic.selectedIndex = i;
+        syncSelect();
+        break;
+      }
+    }
+  }
+
   var toast = document.getElementById("toast");
   var toastMsg = document.getElementById("toastMsg");
   var toastTimer;
@@ -96,8 +105,6 @@
     toastTimer = setTimeout(function () { toast.classList.remove("is-show"); }, 5000);
   }
 
-  // Form validation
-  var form = document.getElementById("enquiryForm");
   var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
   var phoneRe = /^[+()\d\s-]{6,20}$/;
 
@@ -146,24 +153,3 @@
     showToast("Thank you — we will contact you.");
   });
 })();
-
-
-  // Multipage: preselect topic when arriving at enquiry.html?topic=...
-  (function () {
-    var params = new URLSearchParams(window.location.search);
-    var topic = params.get("topic");
-    var sel = document.getElementById("f-topic");
-    if (topic && sel) {
-      for (var i = 0; i < sel.options.length; i++) {
-        if (sel.options[i].text === topic) { sel.selectedIndex = i; sel.classList.add("has-value"); break; }
-      }
-    }
-    document.querySelectorAll("a[data-topic]").forEach(function (a) {
-      a.addEventListener("click", function () {
-        var t = a.getAttribute("data-topic");
-        if (t && a.getAttribute("href") && a.getAttribute("href").indexOf("enquiry") !== -1) {
-          a.setAttribute("href", "enquiry.html?topic=" + encodeURIComponent(t));
-        }
-      });
-    });
-  })();
